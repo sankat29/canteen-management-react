@@ -1,0 +1,23 @@
+.cardShadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border: none;
+  border-radius: 30px;
+}
+
+.cardGFTitle {
+  font-family: "Rubik Iso" !important;
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cardHeader {
+  position: "sticky";
+  z-index: 100;
+}
+
+.cardContent {
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
