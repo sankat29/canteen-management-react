@@ -6,6 +6,7 @@ import CopyRightText from "../UI/CopyRightText";
 import AuthEmployee from "../employee/AuthEmployee";
 
 import ChefImage from "../../images/chef.png";
+import classes from "./Authenticate.module.css";
 
 function Authenticate(props) {
   const [designation, setDesignation] = useState(null);
@@ -23,7 +24,7 @@ function Authenticate(props) {
 
   return (
     <React.Fragment>
-      <div className="container mt-5">
+      <div className="container mt-4">
         <div className="row">
           <div className="col-md-6 col-xs-8 offset-md-3 offset-xs-2 text-center">
             <Card
@@ -33,7 +34,11 @@ function Authenticate(props) {
               textColor="#ffffff"
             >
               {!designation && (
-                <img src={ChefImage} alt="Chef" style={{ width: "250px" }} />
+                <img
+                  src={ChefImage}
+                  alt="Chef"
+                  className={classes.authenticateChef}
+                />
               )}
               <div className="row">
                 {!designation && (

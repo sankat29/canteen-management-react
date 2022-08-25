@@ -21,3 +21,16 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+#cardTitleAnimate {
+  /* animation: jumpingChef 1s ease-in forwards infinite 3s alternate; */
+}
+
+@keyframes jumpingChef {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}

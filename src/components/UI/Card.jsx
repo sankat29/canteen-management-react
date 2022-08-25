@@ -12,11 +12,13 @@ function Card(props) {
         width: "100%",
         backgroundColor: props.background,
         color: props.textColor,
+        height: props.cardHeight,
       }}
     >
       <div className="card-body">
         <div className={classes.cardHeader}>
           <h5
+            id={classes.cardTitleAnimate}
             className={
               props.useTitleClass ? titleClass : "card-title text-center"
             }

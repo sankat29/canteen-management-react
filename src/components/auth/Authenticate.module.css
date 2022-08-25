@@ -1,0 +1,18 @@
+@keyframes jumpingChef {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+/* .authenticateChef:hover {
+  animation-play-state: paused;
+} */
+
+.authenticateChef {
+  margin-top: 10px;
+  width: 250px;
+  animation: jumpingChef 1s ease-in forwards infinite alternate;
+}
