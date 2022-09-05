@@ -15,26 +15,24 @@ function AuthEmployee(props) {
   const [employeeLoginDisabled, setEmployeeLoginDisabled] = useState(true);
 
   const onEmployeeUserNameInput = (event) => {
-    const userEmail = event.target.value;
     if (
-      validateUserName(userEmail) &&
+      validateUserName(event.target.value) &&
       (employeePassword !== null || employeePassword === "")
     ) {
-      setEmployeeUserName(userEmail);
       setEmployeeLoginDisabled(false);
     } else {
       setEmployeeLoginDisabled(true);
     }
+    setEmployeeUserName(event.target.value);
   };
 
   const onEmployeePasswordInput = (event) => {
-    const userPassword = event.target.value;
-    if (validateUserPassword(userPassword)) {
-      setEmployeePassword(userPassword);
+    if (validateUserPassword(event.target.value)) {
       setEmployeeLoginDisabled(false);
     } else {
       setEmployeeLoginDisabled(true);
     }
+    setEmployeePassword(event.target.value);
   };
 
   const onEmployeeLogin = () => {

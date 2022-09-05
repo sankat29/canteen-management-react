@@ -1,0 +1,19 @@
+.portalDiv {
+  display: block;
+}
+
+.portalChefImage {
+  vertical-align: middle;
+  align-items: center;
+  width: 340px;
+  /* animation: jumpingChef 1s ease-in forwards infinite alternate; */
+}
+
+@keyframes jumpingChef {
+  0% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
